@@ -1,0 +1,34 @@
+<div class="container center-block">
+
+  <div class="row ">
+    <div class="col-md-5">
+ 
+      <form (ngSubmit)="createIngredients()"   [formGroup]="ingredientForm">
+        <div class="form-group">
+          <input type="text" formControlName="ingredient_name" id="ingredient_name" tabindex="1" class="form-control" placeholder="ingredient name"  >
+        </div>
+        <div class="form-group">
+          <select formControlName="measuredType" id="measuredType" required>
+            <option *ngFor="let type of measuredTypes;" [ngValue]="type.name">
+              {{type.name}}
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" formControlName="pricePerUnit" id="pricePerUnit" tabindex="2" class="form-control" placeholder="price Per Unit" >
+        </div>
+ 
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <button type="submit"  class="btn btn-success" >Add Ingredient</button>
+            </div>
+          </div>
+        </div>
+      </form>
+ 
+ 
+    </div>
+  </div>
+ </div>
+ 
