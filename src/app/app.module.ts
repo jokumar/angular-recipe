@@ -6,7 +6,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
-import { LoginComponent } from './user/login/login.component';
+import { HomeComponent } from './user/home/home.component';
 import { RecipeCreateComponent } from './recipes/recipe-create/recipe-create.component';
 import { routingModule } from './app.routing';
 import {RouterModule} from '@angular/router';
@@ -27,7 +27,7 @@ import { ProfileComponent } from './user/profile/profile.component';
    RecipeListComponent,
    RecipeDetailComponent,
    RecipeItemComponent,
-   LoginComponent,
+   HomeComponent,
    RecipeCreateComponent,
    IngredientComponent,
    IngredientListComponent,
